@@ -119,14 +119,8 @@ footer {
         @include icon;
     }
     .google {
-        color: white;
+        @include icon;
         background-color: #dc4e41;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .card2 {
@@ -159,9 +153,6 @@ footer {
         color: #ffffff;
     }
     .envelope, .phone, .location {
-        width: 18px;
-        height: 18px;
-        color: #5863f8;
-        background-color: black;
+        @include icon1;
     }
 }

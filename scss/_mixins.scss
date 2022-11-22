@@ -35,3 +35,9 @@
         justify-content: center;
         align-items: center
 }
+@mixin icon1 {
+    width: 18px;
+    height: 18px;
+    color: #5863f8;
+    background-color: black;
+}
