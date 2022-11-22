@@ -1,8 +1,6 @@
 .s-1 {
     .container{
-        max-width: 1170px;
-        width: 100%;
-        margin: 0 auto;
+        @include section1;
         .info-box {
             h2 {
                 font-size: 14px;
@@ -16,15 +14,7 @@
         .form-wrapper{
             form {
                 textarea {
-                    resize: none;
-                    max-width: 700px;
-                    width: 100%;
-                    height: 290px;
-                    background-color: #f8f8f8;
-                    border: 2px solid lightgrey;
-                    margin-right: 20px;
-                    padding: 24px 20px;
-                    outline: none;
+                    @include textarea;
                 }
                 textarea::placeholder {
                     font-size: 13px;
@@ -38,17 +28,12 @@
                     input[type="text"],
                     input[type="email"],
                     input[type="subject"] {
-                        width: 350px;
-                        height: 60px;
-                        border: 2px solid lightgrey;
-                        padding: 23px 20px;
-                        outline: none;
+                        @include input;
                     }
                     input[type="text"]::placeholder,
                     input[type="email"]::placeholder,
                     input[type="subject"]::placeholder {
-                            font-size: 13px;
-                            color: lightgrey
+                            @include placeholder;
                     }
                     input[type="submit"] {
                         background-color: #5863f8;
@@ -128,26 +113,10 @@ footer {
         display: flex;
     }
     .fb {
-        color: white;
-        background-color: #3b5998;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include icon;
     }
     .tweet {
-        color: white;
-        background-color: #55acee;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        margin-right: 10px;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include icon;
     }
     .google {
         color: white;
